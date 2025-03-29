@@ -1,12 +1,42 @@
-/* style.css — Загальні властивості елементів */
+    /* style.css — Загальні властивості елементів */
+ 
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zen+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
     font-family: 'Montserrat', sans-serif;  /* Гарнітура для основного тексту */
     font-size: 16px;        /* Розмір шрифта основного тексту */
     line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
     letter-spacing: .002em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    > * {
+      padding:0 4.25rem;
+    }
+    @media screen and (max-width:1350px) {
+      > * {
+        padding:0 2.5rem;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;  /* Гарнітура для заголовків */
@@ -21,8 +51,10 @@ h1 { font-size: 2rem; }     /* Висота заголовків у віднос
 h2 { font-size: 1.5rem; }   /* rem - відносний розмір *(body font-size) */
 h3 { font-size: 1.35rem; }
 
+h1, h2, h3 { font-weight: 600; }
+
 p {
-    margin-bottom: .75em;   /* Відступ знизу після абзацу */
+    margin-bottom: 1em;   /* Відступ знизу після абзацу */
 }
 
 a {
@@ -35,10 +67,24 @@ a:hover {
     text-decoration: none;
 }
 
+/* ********************* Додано 19.03.2025 ********************* */
+
 .img-box svg,
 .img-box img {
-    display: block; /* Відображати зображення (<img>, <svg>) всередині контейнера .img-box як блочний елемент */
+    display: block;                 /* Відображати <img> як блочні */
+    max-width: 100%;
     width: 100%;
+    max-height: 75dvh;              /* Обмеження висоти зображень у 65% висоти в'юпорта */
+    object-fit: contain;            /*  */
+    object-position: center center; /* Позиція зображення */
+}
+
+.button {
+    display: inline-block;
+    border-radius: var(--bord-radius);
+    padding: 8px 16px;
+    background-color: var(--bg-color-1);
+    color: var(--lnk-color-1);
 }
 
 /* *************************************************************** */

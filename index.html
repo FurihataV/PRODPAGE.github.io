@@ -3,64 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>SmartPot</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section_01.css">
+    <link rel="stylesheet" href="css/section_02.css">
 </head>
-<body id="top">
-    <!-- Navigation section -->
-    <nav>
-        <div class="navbar">
-            <a href="#top" class="logo">
-                <img src="img/logo.svg" alt="Логотип проєкту">
-                <span>Назва проєкту</span>
-            </a>
-           <div class="navigation">
-                <button class="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="level_1">
-                    <li><a class="nav-link" href="#top">Додому</a></li>
-                    <li><a class="nav-link" href="#s1">Пункт 1</a></li>
-                    <li><a class="nav-link" href="#s2">Пункт 2</a></li>
-                    <li><a class="nav-link" href="#s3">Пункт 3</a></li>
-                </ul>
-           </div>
-       </div>
-    </nav>
-    <!-- END of Navigation section -->
-
+ <body id="top">
     <!-- C O N T N E N T   W R A P P E R -->
-    <div class="wrapper"> <!-- Загальний контейнер -->
-
-        <!-- Start of the Header section -->
-        <header class="container">
-            <div class="inside">
+    <div class="wrapper">  <!-- Загальний контейнер -->
+    <!-- Start of the Header section -->
+     <header>
+        <div class="header_logo-wrapper">
+            <span>SmartPot</span>
+        </div>
+            <!-- START of Navigation section -->
+            <div class="header_nav">
+                <nav>
+                  <ul>
+                    <li><span>Про продукт</span></li>
+                    <li><span>Інвестувати</span></li>
+                    <li><button>Дізнатися більше</button></li>
+                  </ul>
+                </nav>
             </div>
-        </header>
-        <!-- END of the Header section -->
-
+            <div class="burger-icon" id="burger-icon">
+             <span></span>
+             <span></span>
+             <span></span>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <nav>
+                    <ul>
+                        <li><span>Про продукт</span></li>
+                        <li><span>Інвестувати</span></li>
+                        <li><button>Дізнатися більше</button></li>
+                        <li><button id='close-btn'><img src="./img/close.svg" alt=""></button></li>
+                    </ul>
+                </nav>
+                 <!-- END of the Header section -->
+            </div>
+ </header>
+ <main>
         <!-- Section #s1 -->
-        <section id="s1" class="container">
-            <div class="inside">
+        <section id="s1" class="title-section">
+            <div class="text-wrapper">
+                <h2>Розумний Горщик: революція в догляді за рослинами</h2>
+                  <p>Інноваційне рішення для автоматичного догляду за вашими рослинами</p>
             </div>
         </section>
         
         <!-- Section #s2 -->
-        <section id="s2" class="container">
-            <div class="inside">
+        <section id="s2" class="about-section">
+            <div class="about-section_wrapper">
+                <div class="image-wrapper">
+                    <img src="./img/pot1.svg" alt="SmartPot">
+                  </div>
+                  <div class='text-wrapper'>
+                    <h3>Забудьте про турботи, довірте догляд за рослинами Розумному Горщику!</h3>
+                    <p>Розумний Горщик - це новітній технологічний пристрій, який автоматично забезпечує ваші рослини необхідною кількістю води та поживних речовин.</p>
+                  </div>
             </div>
         </section>
 
         <!-- Section #s3 -->
-        <section id="s3" class="container">
-            <div class="inside">
+        <section id="s3" class="opportunities_section">
+            <div class="opportunities_section_wrapper">
+            </div>
+        </section>
+
+        <!-- Section #s4 -->
+        <section id="s3" class="how-it-works_section">
+            <div class="how-it-works_wrapper">
+            </div>
+        </section>
+
+        <!-- Section #s5 -->
+        <section id="s3" class="advantages_section">
+            <div class="advantages_wrapper">
+            </div>
+        </section>
+
+        <!-- Section #s6 -->
+        <section id="s3" class="market-and-opportunities_section">
+            <div class="market-and-opportunities_wrapper">
+            </div>
+        </section>
+
+        <!-- Section #s7 -->
+        <section id="s3" class="skills-section">
+            <div class="skills-wrapper">
+            </div>
+        </section>
+
+        <!-- Section #s8 -->
+        <section id="s3" class="investments-section">
+            <div class="investments-wrapper">
             </div>
         </section>
 
@@ -78,5 +120,6 @@
     <script src="js/nav.js"></script>
 
     <!-- End of Scripts in project -->
+</main>
 </body>
 </html>
